@@ -12,6 +12,8 @@
       margin: 0;
       /*background-color: #2471A3;*/
         background-image: url("img/background.jpeg");
+        background-repeat : no-repeat;
+        background-size: cover;
       }
       a{
       text-decoration: none;
@@ -20,7 +22,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      height: 40px;
+      height: 60px;
       border-radius: 40px;
       padding: 10px;
       transform: translate(-50%,-50%);
@@ -32,8 +34,8 @@
       background: #2f3640;
       color: #ffffff;
       float: right;
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -99,16 +101,25 @@
       width: 110px;
       }
       }
+
+      #card{
+        position: absolute;
+        top: 60%;
+        display: flex;
+        justify-content: center;
+        left: 7%;
+      }
     </style>
   </head>
   <body>
     <div class="search">
       <input type="text" name="" placeholder="Serach" class="text">
       <a href="#" class="btn"><i class="fa fa-search "></i></a>
-
     </div>
-    <div>
+
+    <div id="card">
       <th:block th:include="gu_card"></th:block>
     </div>
+
   </body>
 </html>
