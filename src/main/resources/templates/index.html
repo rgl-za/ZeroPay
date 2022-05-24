@@ -11,7 +11,7 @@
       padding:0;
       margin: 0;
       /*background-color: #2471A3;*/
-        background-image: url("../img/background.jpeg");
+        background-image: url("img/background.jpeg");
       }
       a{
       text-decoration: none;
@@ -30,7 +30,7 @@
       .btn{
       border-radius:50%;
       background: #2f3640;
-      color: #2471A3;
+      color: #ffffff;
       float: right;
       width: 40px;
       height: 40px;
@@ -105,6 +105,10 @@
     <div class="search">
       <input type="text" name="" placeholder="Serach" class="text">
       <a href="#" class="btn"><i class="fa fa-search "></i></a>
+
+    </div>
+    <div>
+      <th:block th:include="gu_card"></th:block>
     </div>
   </body>
 </html>
